@@ -28,9 +28,16 @@ void determineInput();
 int main ()
 
 {
-    double userChoice;
+    string userChoice;
     double answer;
     string trig[10] {};
     double constant[10] {0};
+
+    cout << "Please enter a derivative you would like to find:" << endl;
+    cin >> userChoice;
+
+
+
+
 
 }
