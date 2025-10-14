@@ -20,7 +20,10 @@
 using namespace std;
 
 //Functions
-void powerRule();
+void powerRule(string userChoice) {
+    int a,x;
+
+};
 void chainRule();
 void constantRule();
 void determineInput();
@@ -30,13 +33,11 @@ int main ()
 {
     string userChoice;
     double answer;
-    string trig[10] {};
-    double constant[10] {0};
+    // string trig[10] {};
+    // double constant[10] {0};
 
-    cout << "Please enter a derivative you would like to find:" << endl;
+    cout << "Please enter a power rule d/dx:" << endl;
     cin >> userChoice;
-
-
 
 
 
