@@ -28,12 +28,14 @@ void checkEquation(string, int N) {
 void powerRule(string);
 void chainRule(string);
 void constantRule(string);
-void determineInput(string);
 
 int main ()
 
 {
     string userInput;
+    string equation[100]{};
+    string trig[10]{};
+    int numbers[10]{};
     int N = userInput.length();
     cout << "Please enter a power rule d/dx:" << endl;
     getline(cin, userInput);
