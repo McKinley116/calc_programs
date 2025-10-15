@@ -36,6 +36,7 @@ string quotientRule();
 int main() {
     int a, b;
     char operation;
+    string equation;
 
     cout << "Enter two numbers: ";
     cin >> a >> b;
@@ -43,6 +44,11 @@ int main() {
     cin >> operation;
 
     determineOperation(a, b, operation);
+
+    cout << "Enter an equation:";
+    cin.ignore();
+    getline(cin, equation);
+    cout << equation << endl;
 
     return 0;
 }
@@ -60,12 +66,9 @@ void determineOperation(int a, int b, char operation) {
         } else {
             cout << "Error: Division by zero is not allowed." << endl;
         }
-
-    }else if (operation == 'd/dx') {
-
     }else {
         cout << "Invalid operation." << endl;
-    }
+    };
 }
 
 int addition(int a, int b) {
@@ -84,7 +87,3 @@ int division(int a, int b) {
     return a / b;
 }
 
-string trig_derive(string trig) {
-
-
-};
