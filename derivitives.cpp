@@ -21,7 +21,7 @@
 using namespace std;
 
 //Functions
-void checkEquation(char) {
+void checkEquation(char array[], const int SIZE) {
 
 };
 
