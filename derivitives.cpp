@@ -17,11 +17,13 @@
 #include <iomanip>
 #include <string>
 #include <sstream>
+#include <vector>
 
 using namespace std;
 
 //Functions
-void checkEquation(char array[], const int SIZE) {
+vector <string> splitEquation(string sen) {
+
 
 };
 
@@ -32,14 +34,14 @@ void constantRule(string);
 int main ()
 
 {
-    const int SIZE = 50;
-    char equation[SIZE];
-    //string trig[];
-    //int numbers[];
+    string equation;
+
     cout << "Please enter a power rule d/dx:" << endl;
-    cin.getline(equation, SIZE);
+    cin >> equation;
 
-    cout << equation << endl;
-
+    vector <string> words = splitEquation(equation);
+ for (string w : words) {
+     cout << w << endl;
+ }
 
 }
