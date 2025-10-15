@@ -20,25 +20,24 @@
 using namespace std;
 
 //Functions
-void powerRule(string userChoice) {
-    int a,x;
+void checkEquation(string, int N) {
+    for (int i = 0; i < N; i++) {
 
+    }
 };
-void chainRule();
-void constantRule();
-void determineInput();
+void powerRule(string);
+void chainRule(string);
+void constantRule(string);
+void determineInput(string);
 
 int main ()
 
 {
-    string userChoice;
-    double answer;
-    // string trig[10] {};
-    // double constant[10] {0};
-
+    string userInput;
+    int N = userInput.length();
     cout << "Please enter a power rule d/dx:" << endl;
-    cin >> userChoice;
-
+    getline(cin, userInput);
+    checkEquation(userInput, N);
 
 
 }
