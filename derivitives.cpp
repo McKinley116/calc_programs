@@ -22,26 +22,27 @@
 using namespace std;
 
 //Functions
-vector <string> splitEquation(string sen) {
-
-
+int addition(int a, int b) {
+    return a + b;
 };
-
-void powerRule(string);
-void chainRule(string);
-void constantRule(string);
+int subtraction(int a, int b) {
+    return a - b;
+};
+int multiplication(int a, int b) {
+    return a * b;
+};
+int division(int a, int b) {
+    return a / b;
+};
+string trig_derive();
+int const_derive();
+string powerRule();
+string productRule();
+string quotientRule();
 
 int main ()
 
 {
-    string equation;
-
-    cout << "Please enter a power rule d/dx:" << endl;
-    cin >> equation;
-
-    vector <string> words = splitEquation(equation);
- for (string w : words) {
-     cout << w << endl;
- }
+    int a, b;
 
 }
