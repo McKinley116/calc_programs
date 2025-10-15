@@ -21,20 +21,8 @@
 using namespace std;
 
 //Functions
-void checkEquation(string str) {
-    int n = str.length();
-    const char* word = "";
+void checkEquation(char) {
 
-    for (int i = 0; i < n; i++)
-    {
-        if (str[i] == ' ' or i == n - 1 )
-            cout << word + str[i] << endl;
-            word = "";
-        }
-    else
-    {
-        word += str[i];
-    }
 };
 
 void powerRule(string);
@@ -44,13 +32,14 @@ void constantRule(string);
 int main ()
 
 {
-    string str;
-    string equation[100];
-    string trig[10];
-    int numbers[10];
+    const int SIZE = 50;
+    char equation[SIZE];
+    //string trig[];
+    //int numbers[];
     cout << "Please enter a power rule d/dx:" << endl;
-    getline(cin, str);
-    checkEquation(str);
+    cin.getline(equation, SIZE);
+
+    cout << equation << endl;
 
 
 }
