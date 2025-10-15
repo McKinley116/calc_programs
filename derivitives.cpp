@@ -40,12 +40,11 @@ int main() {
     char operation;
     string equation;
 
-    cout << "Enter two numbers: ";
-    cin >> a >> b;
-    cout << "Enter an operation (+, -, *, /, d/dx): ";
-    cin >> operation;
-
-    determineOperation(a, b, operation);
+    //cout << "Enter two numbers: ";
+    //cin >> a >> b;
+    //cout << "Enter an operation (+, -, *, /, d/dx): ";
+    //cin >> operation;
+    //determineOperation(a, b, operation);
 
     cout << "Enter an equation:";
     cin.ignore();
