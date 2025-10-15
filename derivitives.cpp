@@ -22,6 +22,7 @@
 using namespace std;
 
 // Function declarations
+//void breakdown(string equation, vector<string> words);
 void determineOperation(int a, int b, char operation);
 int addition(int a, int b);
 int subtraction(int a, int b);
@@ -34,6 +35,7 @@ string productRule();
 string quotientRule();
 
 int main() {
+
     int a, b;
     char operation;
     string equation;
@@ -47,8 +49,20 @@ int main() {
 
     cout << "Enter an equation:";
     cin.ignore();
-    getline(cin, equation);
-    cout << equation << endl;
+   getline(cin, equation);
+    stringstream ss(equation);
+    string word;
+    vector<string> words;
+
+    while (ss >> word) {
+        words.push_back(word);
+    }
+
+    cout << "This is your equation:" << endl;
+
+    for (int i = 0; i < words.size(); i++) {
+        cout << words[i] << endl;
+    }
 
     return 0;
 }
