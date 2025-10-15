@@ -16,15 +16,27 @@
 #include <cmath>
 #include <iomanip>
 #include <string>
+#include <sstream>
 
 using namespace std;
 
 //Functions
-void checkEquation(string, int N) {
-    for (int i = 0; i < N; i++) {
+void checkEquation(string str) {
+    int n = str.length();
+    const char* word = "";
 
+    for (int i = 0; i < n; i++)
+    {
+        if (str[i] == ' ' or i == n - 1 )
+            cout << word + str[i] << endl;
+            word = "";
+        }
+    else
+    {
+        word += str[i];
     }
 };
+
 void powerRule(string);
 void chainRule(string);
 void constantRule(string);
@@ -32,14 +44,13 @@ void constantRule(string);
 int main ()
 
 {
-    string userInput;
-    string equation[100]{};
-    string trig[10]{};
-    int numbers[10]{};
-    int N = userInput.length();
+    string str;
+    string equation[100];
+    string trig[10];
+    int numbers[10];
     cout << "Please enter a power rule d/dx:" << endl;
-    getline(cin, userInput);
-    checkEquation(userInput, N);
+    getline(cin, str);
+    checkEquation(str);
 
 
 }
