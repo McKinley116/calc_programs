@@ -36,8 +36,8 @@ string quotientRule();
 
 int main() {
 
-    int a, b;
-    char operation;
+    //int a, b;
+    //char operation;
     string equation;
 
     //cout << "Enter two numbers: ";
