@@ -47,7 +47,7 @@ int main() {
     //determineOperation(a, b, operation);
 
     cout << "Enter an equation:";
-    cin.ignore();
+    cin.clear();
    getline(cin, equation);
     stringstream ss(equation);
     string word;
