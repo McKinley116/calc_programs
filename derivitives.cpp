@@ -28,7 +28,7 @@ int addition(int a, int b);
 int subtraction(int a, int b);
 int multiplication(int a, int b);
 int division(int a, int b);
-string trig_derive(string a);
+string trig_derive(const vector<string>, vector<string> );
 int const_derive(int a);
 string powerRule(int a, int x);
 string productRule();
@@ -51,38 +51,32 @@ int main() {
    getline(cin, equation);
     stringstream ss(equation);
     string word;
-    vector<string> words;
+    vector<string> words;;
+    vector <string> derivatives;
 
     while (ss >> word) {
         words.push_back(word);
+
     }
 
-    cout << "This is your equation:" << endl;
+   // cout << "This is your equation:" << endl;
 
-    for (int i = 0; i < words.size(); i++) {
-        cout << words[i] << endl;
-    }
 
     return 0;
 }
 
-void determineOperation(int a, int b, char operation) {
-    if (operation == '+') {
-        cout << "Result: " << addition(a, b) << endl;
-    } else if (operation == '-') {
-        cout << "Result: " << subtraction(a, b) << endl;
-    } else if (operation == '*') {
-        cout << "Result: " << multiplication(a, b) << endl;
-    } else if (operation == '/') {
-        if (b != 0) {
-            cout << "Result: " << division(a, b) << endl;
-        } else {
-            cout << "Error: Division by zero is not allowed." << endl;
-        }
-    }else {
-        cout << "Invalid operation." << endl;
-    };
+void determineOperation() {
+
 }
+
+string trig_derive(const vector<string>& words, vector<string>& derivatives ) {
+    for (const auto& words : derivatives) {
+        derivatives.push_back(words);
+
+    }
+
+}
+
 
 int addition(int a, int b) {
     return a + b;
