@@ -42,6 +42,7 @@ int main() {
     string equation;
     string word;
     vector<string> words;
+    int answer;
 
     cout << "Enter an equation:";
     cin.clear();
@@ -61,6 +62,8 @@ int main() {
     }
 
     determineOperation(words, equation);
+    answer = determineOperation(words, equation);
+    cout << "The answer is:" << answer << endl;
 
 
 
@@ -77,14 +80,14 @@ int determineOperation( vector<string> words, string equation) {
                 } else if (words[i][j] == '-') {
                     answer = subtraction(i, j);
                 } else if (words[i][j] == '*') {
-                     answer = multiplication(i, j);
+                    answer = multiplication(i, j);
                 } else if (words[i][j] == '/') {
-                   answer = division(i, j);
+                    answer = division(i, j);
                 } else (cout << "error" << endl);
             }
-             return answer;
         }
 
+    return answer;
 
     }
 
