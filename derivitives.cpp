@@ -23,7 +23,7 @@ using namespace std;
 
 // Function declarations
 //void breakdown(string equation, vector<string> words);
-void determineOperation( vector<string> words, string equation);
+int determineOperation( vector<string> words, string equation);
 int addition(int a, int b);
 int subtraction(int a, int b);
 int multiplication(int a, int b);
@@ -67,20 +67,22 @@ int main() {
     return 0;
 }
 
-void determineOperation( vector<string> words) {
+int determineOperation( vector<string> words, string equation) {
     // this functions loops through a users equation and determines the operation to use to calculate an answer
+    int answer = 0;
         for (int i = 0; i < words.size(); i++) {
             for ( int j = 0; j < words[i].size(); j++) {
                 if (words[i][j] == '+') {
-                    cout << addition(i, j);
+                    answer = addition(i, j);
                 } else if (words[i][j] == '-') {
-                    cout << subtraction(i, j);
+                    answer = subtraction(i, j);
                 } else if (words[i][j] == '*') {
-                    cout << multiplication(i, j);
+                     answer = multiplication(i, j);
                 } else if (words[i][j] == '/') {
-                    cout << division(i, j);
+                   answer = division(i, j);
                 } else (cout << "error" << endl);
             }
+             return answer;
         }
 
 
