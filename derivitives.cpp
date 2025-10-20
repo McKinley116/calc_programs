@@ -76,13 +76,13 @@ int determineOperation( vector<string> words, string equation) {
         for (int i = 0; i < words.size(); i++) {
             for ( int j = 0; j < words[i].size(); j++) {
                 if (words[i][j] == '+') {
-                    answer = addition(i, j);
+                    answer = addition();
                 } else if (words[i][j] == '-') {
-                    answer = subtraction(i, j);
+                    answer = subtraction();
                 } else if (words[i][j] == '*') {
-                    answer = multiplication(i, j);
+                    answer = multiplication();
                 } else if (words[i][j] == '/') {
-                    answer = division(i, j);
+                    answer = division();
                 } else (cout << "error" << endl);
             }
         }
